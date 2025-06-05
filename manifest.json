@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "SamaranX - User-Agent Switcher",
+    "version": "1.0",
+    "description": "Instantly switch your browser's User-Agent for easy device simulation.",
+    "icons": {
+        "128": "icons/icon128.png",
+        "48": "icons/icon48.png",
+        "16": "icons/icon16.png"
+    },
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": "icons/icon128.png"
+    },
+    "permissions": [
+        "declarativeNetRequestWithHostAccess",
+        "webRequest",
+        "storage",
+        "declarativeNetRequest"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+        "service_worker": "background.js"
+    }
+}

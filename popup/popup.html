@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamaranX | User-Agent Switcher</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SamaranX - UserAgent Switcher</h1>
+            <label class="switch">
+                <input type="checkbox" id="masterToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <p id="status">Nonaktif</p>
+
+        <div class="main-content">
+            <label for="customInput">Custom User-Agent</label>
+            <textarea id="customInput" rows="7" placeholder="Masukkan User-Agent Anda di sini..."></textarea>
+            <button id="saveBtn">Simpan & Aktifkan</button>
+        </div>
+    </div>
+    <div id="notification"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
